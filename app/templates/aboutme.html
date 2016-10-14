@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<form action="" method="post">
+	<p>
+		About Me:<br>
+		{{ form.aboutme }}
+	</p>
+	<p><input type="submit" value="submit"></input></p>
+</form>
+{% with messages=get_flashed_messages() %}
+	{% if messages %}
+	<ul>
+		{% for message in messages %}
+		<li>{{ message }}</li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+{% endwith %}
+{% endblock %}
