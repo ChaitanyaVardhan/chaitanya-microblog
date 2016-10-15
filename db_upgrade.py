@@ -1,4 +1,4 @@
-#!/c/Python/python
+#!/usr/bin/python
 
 from migrate.versioning import api
 

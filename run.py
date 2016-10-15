@@ -1,4 +1,4 @@
-#!/c/Python27/python 
+#!/usr/bin/python 
 
 from app import app
 
