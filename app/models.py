@@ -15,7 +15,7 @@ class User(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
 	nickname = db.Column(db.String(64), index=True, unique=True)
 	email = db.Column(db.String(120), index=True, unique=True)
-	aboutme = db.Column(db.Text(250))
+	aboutme = db.Column(db.String(250))
 	last_seen = db.Column(db.DateTime)
 	posts = db.relationship('Post', backref='author', lazy='dynamic')
 	followed = db.relationship('User', 
