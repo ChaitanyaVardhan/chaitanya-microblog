@@ -27,3 +27,4 @@ Tempita==0.5.2
 Werkzeug==0.11.11
 Whoosh==2.7.4
 WTForms==2.1
+psycopg2==2.6.2
